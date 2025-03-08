@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="shortcut icon" type="image/png">
+    <title>Dra. Ana Luiza Capistrano | Advogada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fa-solid fa-scale-balanced"></i>
+      Dra. Ana Luiza Capistrano
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#atuacao">Áreas de Atuação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="icons-redes">
+      <a class="icons-link" href="https://www.instagram.com/anacapistrano.advogada" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      
+      <a class="icons-link" href="https://www.linkedin.com/in/seu_perfil" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      
+      <a class="icons-link" href="https://www.facebook.com/seu_perfil" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </header>
+
+  <section class="section-inicio" id="home">
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Advogada especializada em Direito Previdenciário e Trabalhista. </h2>
+        <p class="hero-text-paragrafo">Entre em contato para uma consulta e vamos juntos encontrar a melhor solução para o seu caso.</p>
+        <a href="https://wa.me/5532984005150" class="btn-whatsapp" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> ENTRAR EM CONTATO
+        </a>
+      </div>
+      <img class="foto-perfil" src="./img/perfiladv-removebg.png" alt="Foto da Dra. Ana Luiza Capistrano">
+    </div>
+  </section>
+
+  <section class="section-atuacao" id="atuacao">
+    <div class="conteudo">
+        <h2>Áreas de Atuação</h2>
+        <div class="areas">
+            <div class="area">
+                <i class="fas fa-gavel"></i>
+                <h3>Direito Previdenciário</h3>
+                <p>Atuação em aposentadorias.</p>
+                <p>Revisões previdenciárias.</p>
+                <p>Benefícios.</p>
+            </div>
+            <div class="area">
+                <i class="fas fa-briefcase"></i>
+                <h3>Direito Trabalhista</h3>
+                <p>Defesa dos direitos do trabalhador.</p>
+                <p>Rescisões contratuais.</p>
+            </div>
+            <div class="area">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Direito Cível</h3>
+                <p>Atuação em contratos. </p>
+                <p>Indenizações.</p>
+                <p>Disputas cíveis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="section-contato" id="contato">
+    <div class="section-email">
+      <h2 class="contato-email">Contato por email</h2>
+      <form action="https://formsubmit.co/lucas.alvessantos610@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button class="btn-enviar" type="submit">Enviar</button>
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dra. Ana Luiza Capistrano - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+      async function setFavicon() {
+    const canvas = document.createElement("canvas");
+    canvas.width = 64;
+    canvas.height = 64;
+    const ctx = canvas.getContext("2d");
+
+    const font = "44px FontAwesome"; // Ajuste o tamanho conforme necessário
+    ctx.font = font;
+    ctx.fillText("\uf24e", 10, 50); // Código do ícone da balança
+
+    const favicon = document.getElementById("favicon");
+    favicon.href = canvas.toDataURL("image/png");
+  }
+
+  setFavicon();
+
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('menu').classList.toggle('active');
+  });
+  </script>
+
+    <a href="https://api.whatsapp.com/send?phone=5532984005150&text=Olá!%20Gostaria%20de%20mais%20informações." 
+    class="whatsapp-float" 
+    target="_blank" 
+    aria-label="Conversar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
