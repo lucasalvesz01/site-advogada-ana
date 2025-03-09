@@ -292,27 +292,39 @@ nav ul {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  nav ul {
+@media (max-width: 890px) {
+  .icons-redes {
     display: none;
+  }
+
+  nav ul {
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 60px;
     right: 20px;
     background-color: #8C6E5D;
     width: 200px;
-    padding: 10px;
     border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001; /* Adicione esta linha */
   }
 
   nav ul.active {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .menu-toggle {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    z-index: 1002; /* Adicione esta linha */
   }
 
   .menu-toggle span {
