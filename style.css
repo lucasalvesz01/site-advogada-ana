@@ -106,7 +106,7 @@ nav a {
 
 .foto-perfil {
   width: 30%;
-  height: 30%;
+  height: auto;
   border-radius: 10%;
   margin: 0 auto;
   display: block;
@@ -292,9 +292,28 @@ nav ul {
   padding: 0;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1024px) {
+  header{
+    justify-content: space-between;
+  }
+
   .icons-redes {
     display: none;
+  }
+
+  .icons-redes-menu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .icons-link{
+    font-size: 20px;
+  }
+
+  .menu-contato{
+    padding-bottom:20px ;
+    border-bottom: 1px solid #EFE9E3;
   }
 
   nav ul {
@@ -345,5 +364,39 @@ nav ul {
 
   .menu-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .hero{
+    display: block;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .foto-perfil {
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    align-self: flex-end;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .area h3 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+  
+  .area p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
   }
 }
