@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  background-color: #EFE9E3;
-  color: #4E3629;
+  font-family: "Playfair Display", serif;
+  background-color: #efe9e3;
+  color: #4e3629;
   scroll-behavior: smooth;
 }
 
 header {
   display: flex;
   justify-content: space-around;
-  background-color: #8C6E5D;
+  background-color: #8c6e5d;
   padding: 20px;
   color: #fff;
   position: relative;
 }
 
+.icons-redes-menu {
+  display: none;
+}
+
 .icons-link {
-  color: #EFE9E3;
+  color: #efe9e3;
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
@@ -76,7 +80,7 @@ nav a {
   align-items: center;
   padding: 100px 20px;
   text-align: center;
-  color: #EFE9E3;
+  color: #efe9e3;
 }
 
 .hero::before {
@@ -94,7 +98,7 @@ nav a {
   width: 50%;
   position: relative;
   z-index: 2;
-  color: #EFE9E3;
+  color: #efe9e3;
 }
 
 .hero-text-paragrafo {
@@ -116,7 +120,7 @@ nav a {
 
 .section-inicio {
   position: relative;
-  background: url('./img/background-escritorio.jpg') center/cover no-repeat;
+  background: url("./img/background-escritorio.jpg") center/cover no-repeat;
   height: 89.5vh;
 }
 
@@ -140,7 +144,7 @@ nav a {
 
 .conteudo h2 {
   font-size: 2.5rem;
-  color: #4E3629;
+  color: #4e3629;
   margin-bottom: 1.5em;
 }
 
@@ -151,7 +155,7 @@ nav a {
 }
 
 .area {
-  background: #8C6E5D;
+  background: #8c6e5d;
   padding: 20px;
   border-radius: 10px;
   width: 25%;
@@ -160,8 +164,8 @@ nav a {
 }
 
 .area:hover {
-  background: #4E3629;
-  color: #EFE9E3;
+  background: #4e3629;
+  color: #efe9e3;
 }
 
 .area i {
@@ -180,7 +184,7 @@ nav a {
 }
 
 h2 {
-  color: #EFE9E3;
+  color: #efe9e3;
   font-size: 2.5em;
 }
 
@@ -190,15 +194,16 @@ form {
   gap: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
-  border: 1px solid #8C6E5D;
+  border: 1px solid #8c6e5d;
   border-radius: 5px;
 }
 
 button {
   padding: 10px;
-  background-color: #8C6E5D;
+  background-color: #8c6e5d;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -206,14 +211,14 @@ button {
 }
 
 footer {
-  background-color: #EFE9E3;
-  color: #4E3629;
+  background-color: #efe9e3;
+  color: #4e3629;
   text-align: center;
   padding: 20px;
 }
 
 .section-contato {
-  background-color: #4E3629;
+  background-color: #4e3629;
   height: 40vh;
   padding-top: 4em;
 }
@@ -224,7 +229,7 @@ footer {
 }
 
 .contato-email {
-  color: #EFE9E3;
+  color: #efe9e3;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -235,8 +240,8 @@ footer {
 }
 
 .btn-enviar:hover {
-  background-color: #EFE9E3;
-  color: #4E3629;
+  background-color: #efe9e3;
+  color: #4e3629;
 }
 
 .whatsapp-float {
@@ -250,7 +255,7 @@ footer {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -293,7 +298,7 @@ nav ul {
 }
 
 @media (max-width: 1024px) {
-  header{
+  header {
     justify-content: space-between;
   }
 
@@ -301,19 +306,19 @@ nav ul {
     display: none;
   }
 
-  .icons-redes-menu{
+  .icons-redes-menu {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
 
-  .icons-link{
+  .icons-link {
     font-size: 20px;
   }
 
-  .menu-contato{
-    padding-bottom:20px ;
-    border-bottom: 1px solid #EFE9E3;
+  .menu-contato {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efe9e3;
   }
 
   nav ul {
@@ -322,7 +327,7 @@ nav ul {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #8C6E5D;
+    background-color: #8c6e5d;
     width: 200px;
     border-radius: 5px;
     padding: 10px;
@@ -366,7 +371,7 @@ nav ul {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  .hero{
+  .hero {
     display: block;
   }
 
@@ -394,9 +399,31 @@ nav ul {
     font-size: 1.75rem;
     margin-bottom: 25px;
   }
-  
+
   .area p {
     font-size: 1.1rem;
     margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 850px) {
+  .section-atuacao {
+    height: 108vh;
+  }
+
+  .conteudo h2 {
+    font-size: 2.5rem;
+    color: #4e3629;
+    margin: 1em 0;
+  }
+
+  .area {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .areas {
+    display: block;
   }
 }
