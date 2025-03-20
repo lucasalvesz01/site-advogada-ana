@@ -117,20 +117,34 @@
 
   <script>
     async function setFavicon() {
-      const canvas = document.createElement("canvas");
-      canvas.width = 64;
-      canvas.height = 64;
-      const ctx = canvas.getContext("2d");
+        const canvas = document.createElement("canvas");
+        canvas.width = 64;
+        canvas.height = 64;
+        const ctx = canvas.getContext("2d");
 
-      const font = "44px FontAwesome"; // Ajuste o tamanho conforme necessário
-      ctx.font = font;
-      ctx.fillText("\uf24e", 10, 50); // Código do ícone da balança
+        const font = "44px FontAwesome"; // Ajuste o tamanho conforme necessário
+        ctx.font = font;
+        ctx.fillText("\uf24e", 10, 50); // Código do ícone da balança
 
-      const favicon = document.getElementById("favicon");
-      favicon.href = canvas.toDataURL("image/png");
+        // Criando um novo <link> para o favicon
+        const newFavicon = document.createElement("link");
+        newFavicon.rel = "shortcut icon";
+        newFavicon.type = "image/png";
+        newFavicon.href = canvas.toDataURL("image/png");
+
+        // Removendo o favicon antigo (se existir)
+        const oldFavicon = document.getElementById("favicon");
+        if (oldFavicon) {
+            oldFavicon.remove();
+        }
+
+        // Adicionando o novo favicon ao head
+        document.head.appendChild(newFavicon);
     }
 
-    setFavicon();
+    // Chamando a função ao carregar a página
+    setTimeout(setFavicon, 100);
+
 
     document.getElementById('menu-toggle').addEventListener('click', function () {
       this.classList.toggle('open');
