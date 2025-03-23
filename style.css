@@ -301,9 +301,37 @@ nav ul {
   padding: 0;
 }
 
+@media (max-width: 1639px) {
+  .section-inicio{
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1490px) {
+  .section-inicio{
+    height: 78vh;
+  }
+}
+
+@media (max-width: 1380px) {
+  .section-inicio{
+    height: 72vh;
+  }
+}
+
+@media (max-width: 1220px) {
+  .section-inicio{
+    height: 66vh;
+  }
+}
+
 @media (max-width: 1024px) {
   header {
     justify-content: space-between;
+  }
+
+  .section-inicio{
+    height: 89.5vh;
   }
 
   .icons-redes {
@@ -497,6 +525,10 @@ nav ul {
 @media (max-width: 520px) {
   .logo{
     font-size: 20px;
+  }
+
+  .section-inicio {
+    height: 86vh;
   }
 }
 
