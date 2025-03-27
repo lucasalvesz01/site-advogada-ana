@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dra. Ana Luiza Capistrano - Advogada especializada em Direito Previdenciário e Trabalhista. Atendimento personalizado para garantir seus direitos.">
+  <meta name="keywords" content="advogada, direito previdenciário, direito trabalhista, aposentadoria, ação trabalhista">
   <link id="favicon" rel="shortcut icon" type="image/png">
   <title>Dra. Ana Luiza Capistrano | Advogada</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,7 +28,7 @@
       <ul id="menu">
         <li><a href="#home">Início</a></li>
         <li><a href="#atuacao">Áreas de Atuação</a></li>
-        <li class="menu-contato"><a href="#contato">Contato</a></li>
+        <li class="menu-contato"><a href="#contato">Contatos</a></li>
         <div class="icons-redes-menu">
           <a class="icons-link" href="https://www.instagram.com/anacapistrano.advogada" target="_blank">
             <i class="fa-brands fa-instagram"></i>
@@ -123,12 +125,19 @@
             </div>
         </div>
 
+        <div class="faq-item">
+          <button class="faq-question">Como funciona o processo de revisão previdenciária?</button>
+          <div class="faq-answer">
+            <p>A revisão previdenciária analisa se todos seus direitos foram calculados corretamente. Verificamos contribuições, tempo de serviço e outros fatores que podem aumentar seu benefício.</p>
+          </div>
+        </div>
+
     </div>
   </section>
 
   <section class="section-contato" id="contato">
     <div class="section-email">
-      <h2 class="contato-email">Contato por email</h2>
+      <h2 class="contato-email">Envie sua mensagem</h2>
       <form action="https://formsubmit.co/lucas.alvessantos610@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Seu nome" required>
         <input type="email" name="email" placeholder="Seu e-mail" required>
@@ -136,6 +145,12 @@
         <button class="btn-enviar" type="submit">Enviar</button>
         <input type="hidden" name="_captcha" value="false">
       </form>
+    </div>
+
+    <div class="info-contato">
+      <p><i class="fas fa-phone"></i> (32) 98400-5150</p>
+      <p><i class="fas fa-envelope"></i> dra.analuizacapistrano@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Endereço do escritório</p>
     </div>
   </section>
 
@@ -174,21 +189,43 @@
     setTimeout(setFavicon, 100);
 
 
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-      this.classList.toggle('open');
-      document.getElementById('menu').classList.toggle('active');
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+    
+    // Fechar menu ao clicar em um link
+    const menuLinks = menu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        this.classList.remove('open');
+        menu.classList.remove('active');
+      });
     });
+  });
 
     document.addEventListener("DOMContentLoaded", function() {
-        const questions = document.querySelectorAll(".faq-question");
-
-        questions.forEach(question => {
-            question.addEventListener("click", function() {
-                const answer = this.nextElementSibling;
-                answer.style.display = (answer.style.display === "block") ? "none" : "block";
-            });
-        });
+  const questions = document.querySelectorAll(".faq-question");
+  
+  questions.forEach(question => {
+    question.addEventListener("click", function() {
+      const answer = this.nextElementSibling;
+      const isOpen = answer.style.display === "block";
+      
+      // Fechar todas as respostas primeiro
+      document.querySelectorAll(".faq-answer").forEach(ans => {
+        ans.style.display = "none";
+        ans.previousElementSibling.classList.remove("active");
+      });
+      
+      // Abrir apenas a resposta clicada
+      if (!isOpen) {
+        answer.style.display = "block";
+        this.classList.add("active");
+      }
     });
+  });
+});
 
   </script>
 
