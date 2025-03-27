@@ -222,6 +222,74 @@ footer {
   padding: 20px;
 }
 
+.conteudo-faq {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.conteudo-faq h2 {
+  font-size: 2.5rem;
+  color: #4e3629;
+  margin-bottom: 1.5em;
+}
+
+.section-faq {
+  display: flex;
+  justify-content: center;
+  background-color: #efe9e3; /* Cor do fundo do site */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.faq-item {
+  max-width: 100%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px; /* Aumenta o espaço interno */
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  background: #8c6e5d;
+  color: #efe9e3;
+  border-left: 4px solid #4e3629;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between; /* Faz o sinal de "+" ficar no canto direito */
+  align-items: center;
+  font-family: "Playfair Display", serif;
+}
+
+.faq-question::after {
+  content: "+"; /* Adiciona o sinal de "+" */
+  font-size: 22px;
+  font-weight: bold;
+  color: #efe9e3;
+  margin-left: auto;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  border-left: 4px solid #4e3629;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question:hover {
+  background: #4e3629; /* Tom mais escuro ao passar o mouse */
+}
+
+
 .section-contato {
   background-color: #4e3629;
   height: 40vh;

@@ -3,4 +3,5 @@ Atuações
 Cores
 Fotos
 Redes Sociais
-+ Sections
++ Sections (ex: Sobre mim)
+Nome do domínio
