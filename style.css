@@ -238,7 +238,7 @@ footer {
 .section-faq {
   display: flex;
   justify-content: center;
-  background-color: #efe9e3; /* Cor do fundo do site */
+  background-color: #efe9e3; 
   padding: 50px 20px;
   text-align: center;
 }
@@ -251,8 +251,8 @@ footer {
 
 .faq-question {
   width: 100%;
-  padding: 15px; /* Aumenta o espaço interno */
-  font-size: 18px; /* Aumenta o tamanho da fonte */
+  padding: 15px;
+  font-size: 18px; 
   font-weight: bold;
   text-align: left;
   border: none;
@@ -262,13 +262,13 @@ footer {
   cursor: pointer;
   border-radius: 5px;
   display: flex;
-  justify-content: space-between; /* Faz o sinal de "+" ficar no canto direito */
+  justify-content: space-between; 
   align-items: center;
   font-family: "Playfair Display", serif;
 }
 
 .faq-question::after {
-  content: "+"; /* Adiciona o sinal de "+" */
+  content: "+"; 
   font-size: 22px;
   font-weight: bold;
   color: #efe9e3;
@@ -286,14 +286,14 @@ footer {
 }
 
 .faq-answer p {
-  font-family: "Playfair Display", serif; /* Mesma fonte do site */
+  font-family: "Playfair Display", serif; 
   font-size: 16px;
   line-height: 1.3;
-  color: #000; /* Cor do texto principal do site */
+  color: #000; 
 }
 
 .faq-question:hover {
-  background: #4e3629; /* Tom mais escuro ao passar o mouse */
+  background: #4e3629;
 }
 
 
@@ -453,7 +453,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Faz com que o menu comece logo abaixo do header */
+    top: 100%; 
     right: 1%;
     width: 25%;
     background-color: #8c6e5d;
@@ -480,7 +480,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1002; /* Adicione esta linha */
+    z-index: 1002;
   }
 
   .menu-toggle span {
