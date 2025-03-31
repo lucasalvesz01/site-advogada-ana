@@ -4,4 +4,4 @@ Cores
 Fotos
 Redes Sociais
 + Sections (ex: Sobre mim)
-Nome do domínio
+Nome do domínio 
