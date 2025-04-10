@@ -218,6 +218,20 @@ button {
   cursor: pointer;
 }
 
+.icons-redes-footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top:20px ;
+}
+
+.icons-link-footer {
+  color: #efe9e3;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
 footer {
   background-color: #efe9e3;
   color: #000;
