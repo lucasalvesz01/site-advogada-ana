@@ -403,23 +403,6 @@ footer {
   text-align: justify;
 }
 
-
-@media (max-width: 768px) {
-  .conteudo-sobre {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .foto-sobre {
-      width: 180px;
-      height: 180px;
-  }
-
-  .texto-sobre {
-      text-align: center;
-  }
-}
-
 .section-contato {
   background-color: #4e3629;
   height: 60vh;
@@ -582,7 +565,7 @@ nav ul {
     top: 100%; 
     right: 1%;
     width: 25%;
-    background-color: #8c6e5d;
+    background-color: #4e3629;
     border-radius: 0 0 5px 5px;
     padding: 10px;
     opacity: 0;
@@ -662,6 +645,45 @@ nav ul {
     font-size: 1.1rem;
     margin-bottom: 0.5em;
   }
+
+  .section-diferenciais {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .container-diferenciais {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .diferencial-texto {
+    text-align: center;
+    width: 100%;
+  }
+
+  .diferencial-texto h2 {
+    font-size: 28px;
+  }
+
+  .diferencial-texto p {
+    font-size: 16px;
+  }
+
+  .linha-decorativa {
+    margin: 0 auto;
+  }
+
+  .card-diferencial {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .diferencial {
+    width: 90%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -711,7 +733,32 @@ nav ul {
   .section-email{
     width: 50%;
   }
-  
+
+  .section-sobre {
+    height: auto; /* deixa a altura dinâmica */
+    padding: 40px 20px;
+    flex-direction: column; /* muda de linha para coluna */
+  }
+
+  .conteudo-sobre {
+    flex-direction: column; /* empilha os elementos */
+    gap: 40px; /* reduz o espaço entre imagem e texto */
+  }
+
+  .foto-sobre {
+    width: 180px;
+    height: 180px;
+  }
+
+  .texto-sobre {
+    width: 100%;
+    text-align: center;
+  }
+
+  .texto-sobre p {
+    text-align: justify; /* ou center, se preferir no mobile */
+    font-size: 1rem;
+  } 
 }
 
 @media (max-width: 640px) {
