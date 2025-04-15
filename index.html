@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Dra. Ana Luiza Capistrano - Advogada especializada em Direito Previdenciário e Trabalhista. Atendimento personalizado para garantir seus direitos.">
   <meta name="keywords" content="advogada, direito previdenciário, direito trabalhista, aposentadoria, ação trabalhista">
-  <link id="favicon" rel="shortcut icon" type="image/png">
+  <link rel="shortcut icon" href="./img/icons8-justice-16.png" type="image/png">
   <title>Dra. Ana Luiza Capistrano | Advogada</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="reset.css">
@@ -100,7 +100,7 @@
     <div class="conteudo-sobre">
       <img class="foto-sobre" src="./img/perfiladv.png" alt="Foto da Dra. Ana Luiza Capistrano">
       <div class="texto-sobre">
-        <h2>Sobre Mim</h2>
+        <h2>Sobre mim</h2>
         <p>
           Olá! Sou a Dra. Ana Luiza Capistrano, advogada apaixonada na área jurídica.  Ofereço um atendimento individualizado e atencioso, sempre buscando as soluções jurídicas mais adequadas para cada cliente. Com uma abordagem personalizada, voltada para as necessidades específicas de cada pessoa, trabalho para garantir que você receba a orientação e o suporte necessários para resolver suas questões jurídicas com segurança e eficiência. Meu compromisso é oferecer um serviço de excelência, pautado pela ética e pelo comprometimento, sempre com o objetivo de proteger e promover seus direitos. Se você busca uma advogada que combine conhecimento técnico com um atendimento próximo e confiável, estou à disposição para ajudá-lo. Vamos juntos encontrar a melhor solução para o seu caso.
         </p>
@@ -172,35 +172,6 @@
   </footer>
 
   <script>
-    async function setFavicon() {
-        const canvas = document.createElement("canvas");
-        canvas.width = 64;
-        canvas.height = 64;
-        const ctx = canvas.getContext("2d");
-
-        const font = "44px FontAwesome"; // Ajuste o tamanho conforme necessário
-        ctx.font = font;
-        ctx.fillText("\uf24e", 10, 50); // Código do ícone da balança
-
-        // Criando um novo <link> para o favicon
-        const newFavicon = document.createElement("link");
-        newFavicon.rel = "shortcut icon";
-        newFavicon.type = "image/png";
-        newFavicon.href = canvas.toDataURL("image/png");
-
-        // Removendo o favicon antigo (se existir)
-        const oldFavicon = document.getElementById("favicon");
-        if (oldFavicon) {
-            oldFavicon.remove();
-        }
-
-        // Adicionando o novo favicon ao head
-        document.head.appendChild(newFavicon);
-    }
-
-    // Chamando a função ao carregar a página
-    setTimeout(setFavicon, 100);
-
 
     document.getElementById('menu-toggle').addEventListener('click', function() {
     this.classList.toggle('open');
