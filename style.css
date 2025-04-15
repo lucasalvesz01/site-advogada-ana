@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
+:root {
+  --transition: all 0.3s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +34,12 @@ header {
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons-link:hover {
+  transform: scale(1.2);
+  color: #ffffff; 
 }
 
 nav {
@@ -63,6 +73,34 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #efe9e3;
+  transition: var(--transition);
+  position: relative;
+  padding: 5px 0;
+}
+
+#menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #efe9e3;
+  transition: var(--transition);
+}
+
+#menu li a:hover::after {
+  width: 100%;
+}
+
+#menu li a:hover {
+  color: #efe9e3;
 }
 
 .logo {
