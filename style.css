@@ -678,11 +678,11 @@ nav ul {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    width: 100%;
+    width: 80%;
   }
 
   .diferencial {
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -751,7 +751,7 @@ nav ul {
   }
 
   .texto-sobre {
-    width: 100%;
+    width: 95%;
     text-align: center;
   }
 
@@ -834,4 +834,5 @@ nav ul {
   .btn-enviar{
     width: 30%;
   }
+
 }
