@@ -844,8 +844,9 @@ nav ul {
   }
 
   footer p{
+    margin: auto;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: 73%;
   }
 }
