@@ -843,4 +843,7 @@ nav ul {
     width: 30%;
   }
 
+  footer p{
+    width: 75%;
+  }
 }
