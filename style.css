@@ -276,7 +276,11 @@ footer {
   padding: 20px;
 }
 
-footer p{
+.direitos {
+  margin-top: 5px;
+}
+
+footer span{
   font-family: none;
 }
 
