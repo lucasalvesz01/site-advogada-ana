@@ -276,6 +276,10 @@ footer {
   padding: 20px;
 }
 
+footer p{
+  font-family: none;
+}
+
 .section-diferenciais {
   height: 60vh;
   background-color: #efe9e3;
