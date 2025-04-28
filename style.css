@@ -321,6 +321,7 @@ footer span{
 }
 
 .linha-decorativa {
+  display: none;
   width: 80px; 
   height: 2.5px;
   background-color: #4e3629;
@@ -832,6 +833,14 @@ nav ul {
 
   nav a{
     font-size: 15px;
+  }
+
+  .section-sobre{
+    padding: 10px 0;
+  }
+
+  .linha-decorativa {
+    display: block;
   }
 
   .section-email {
