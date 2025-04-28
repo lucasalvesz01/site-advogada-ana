@@ -835,9 +835,9 @@ nav ul {
     font-size: 15px;
   }
 
-  /* .section-sobre{
-    padding: 10px 0;
-  } */
+  .conteudo-sobre{
+    padding: 25px 0;
+  }
 
   .linha-decorativa {
     display: block;
