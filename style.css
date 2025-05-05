@@ -360,6 +360,7 @@ footer span{
 }
 
 .diferencial p {
+  margin-top: 14px;
   font-size: 16px;
   color: #efe9e3;
 }
@@ -546,7 +547,7 @@ nav ul {
   }
 
   .section-inicio{
-    height: 89.5vh;
+    height: 120vh;
   }
 
   .icons-redes {
@@ -807,13 +808,13 @@ nav ul {
   }
 
   .section-inicio {
-    height: 86vh;
+    height: 100vh;
   }
 }
 
 @media (max-width: 440px) {
   .section-inicio {
-    height: 80vh;
+    height: 75vh;
   }
 
   .hero-text {
