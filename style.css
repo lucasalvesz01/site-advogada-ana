@@ -27,6 +27,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 9999;
+  box-sizing: border-box;
 }
 
 .icons-redes-menu {
