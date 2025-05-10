@@ -22,7 +22,11 @@ header {
   background-color: #4e3629;
   padding: 20px;
   color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .icons-redes-menu {
@@ -163,7 +167,8 @@ nav a {
 .section-inicio {
   position: relative;
   background: url("./img/background-escritorio.jpg") center/cover no-repeat;
-  height: 91vh; /*ou 91vh*/
+  height: 89.5vh; /*ou 91vh*/
+  padding-top: 80px;
 }
 
 .section-atuacao {
@@ -749,14 +754,14 @@ nav ul {
   }
 
   .section-sobre {
-    height: auto; /* deixa a altura dinâmica */
+    height: auto; 
     padding: 40px 20px;
-    flex-direction: column; /* muda de linha para coluna */
+    flex-direction: column; 
   }
 
   .conteudo-sobre {
-    flex-direction: column; /* empilha os elementos */
-    gap: 40px; /* reduz o espaço entre imagem e texto */
+    flex-direction: column; 
+    gap: 40px; 
   }
 
   .foto-sobre {
@@ -770,7 +775,7 @@ nav ul {
   }
 
   .texto-sobre p {
-    text-align: justify; /* ou center, se preferir no mobile */
+    text-align: justify; 
     font-size: 1rem;
   } 
 }
