@@ -549,6 +549,7 @@ nav ul {
 @media (max-width: 1024px) {
   header {
     justify-content: space-between;
+    border-bottom: solid #efe9e3 1px;
   }
 
   h2 {
