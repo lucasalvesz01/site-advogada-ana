@@ -810,6 +810,7 @@ nav ul {
     width: 40%;
     height: auto;
   }
+
 }
 
 @media (max-width: 520px) {
@@ -825,6 +826,10 @@ nav ul {
 @media (max-width: 440px) {
   .section-inicio {
     height: 80vh;
+  }
+
+  .insta-webview .section-inicio {
+    height: 85vh;
   }
 
   .hero-text {

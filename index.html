@@ -213,5 +213,14 @@
   <script>
     AOS.init();
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (navigator.userAgent.includes("Instagram")) {
+      document.body.classList.add("insta-webview");
+    }
+  });
+</script>
+
   </body>
 </html>
